@@ -106,10 +106,12 @@ Esto es otra línea
 
                 <p>Lorem <strong>ipsum</strong> dolor <em>sit</em> amet consectetur adipisicing elit. Minus eligendi
                     nostrum blanditiis, eaque
-                    quaerat harum ipsum ipsam vitae, mollitia, voluptate deleniti quos accusantium culpa cum accusamus
+                    quaerat harum ipsum ipsam vitae, <span class="marcado">mollitia</span>, voluptate deleniti quos
+                    accusantium culpa cum accusamus
                     aperiam. Porro, perferendis omnis!</p>
 
-                <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat optio aliquid possimus ipsa,
+                <p><strong>Lorem ipsum dolor sit, <span class="marcado">amet</span> consectetur adipisicing elit. Fugiat
+                        optio aliquid possimus ipsa,
                         modi corporis. Minima eveniet saepe soluta corrupti animi nisi similique, at atque blanditiis
                         explicabo maxime vitae amet?</strong></p>
             </article>
@@ -122,25 +124,28 @@ Esto es otra línea
 
                 <audio src="audios/cancion.mp3" controls></audio>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762081771463!2d-2.9157860494739865!3d43.25640788591417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1664803681259!5m2!1ses!2ses"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <iframe src="https://www.youtube-nocookie.com/embed/SVGjOUnQZ58"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <iframe src="https://www.youtube-nocookie.com/embed/_mrr3UNALww"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/03eZZBU0bY5hsiVrnFrA2p?utm_source=generator"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+                <div class="video-responsive r4x3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762081771463!2d-2.9157860494739865!3d43.25640788591417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1664803681259!5m2!1ses!2ses"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="video-responsive r4x3">
+                    <iframe src="https://www.youtube-nocookie.com/embed/SVGjOUnQZ58" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube-nocookie.com/embed/_mrr3UNALww" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-responsive r4x3">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/03eZZBU0bY5hsiVrnFrA2p?utm_source=generator"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
             </article>
 
             <article id="tablas">
@@ -301,7 +306,7 @@ Esto es otra línea
         <!-- Símbolo de copyright -->
         <p>&copy;2022 Javier Lete</p>
         <div>
-            <a href="#">Arriba</a>
+            <a id="arriba" href="#">Arriba</a>
         </div>
     </footer>
 </body>
