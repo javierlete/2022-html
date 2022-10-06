@@ -1,7 +1,148 @@
+/* Variables CSS (Custom Properties) */
+
+:root {
+    --color-fondo: white;
+    --color-tinta: black;
+    --color-fondo-titulo: black;
+    --color-tinta-titulo: white;
+    --margen-grande: 1rem;
+    --margen-pequeno: 0.5rem;
+    --tamano-letra: 16px;
+    --alto-menu: calc(var(--tamano-letra) + var(--margen-pequeno)*2 - 2px);
+}
+
+/* Valores generales */
+
 * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: var(--tamano-letra);
+
+    background-color: var(--color-fondo);
+    color: var(--color-tinta);
+}
+
+p {
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
 img {
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: var(--margen-grande);
+}
+
+/* Cabecera */
+
+header {
+    text-align: center;
+    background-color: var(--color-fondo-titulo);
+    color: var(--color-tinta-titulo);
+
+    padding: var(--margen-grande);
+}
+
+/* Menú */
+
+
+nav {
+    text-align: center;
+    background-color: var(--color-fondo-titulo);
+}
+
+nav ul li {
+    line-height: var(--alto-menu);
+}
+
+nav a {
+    padding: calc(var(--margen-pequeno) - 2px);
+    background-color: var(--color-fondo-titulo);
+    color: var(--color-tinta-titulo);
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    background-color: var(--color-tinta-titulo);
+    color: var(--color-fondo-titulo);
+    width: 100%;
+}
+/*
+article, section {
+    padding-top: var(--alto-menu);
+}
+
+nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+nav li ul {
+    display: none;
+    position: absolute;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--color-tinta-titulo);
+    color: var(--color-fondo-titulo);
+}
+*/
+/* Principal */
+
+main {
+    padding: var(--margen-pequeno);
+}
+
+/* Anuncios */
+
+aside {
+    padding: var(--margen-pequeno);
+    line-height: 1.5;
+}
+
+/* Pie */
+
+footer {
+    padding: var(--margen-pequeno);
+    background-color: var(--color-fondo-titulo);
+    color: var(--color-tinta-titulo);
 }
