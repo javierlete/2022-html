@@ -62,7 +62,11 @@ h6 {
     font-size: 1rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: var(--margen-grande);
 }
 
@@ -77,7 +81,6 @@ header {
 }
 
 /* Menú */
-
 
 nav {
     text-align: center;
@@ -94,38 +97,13 @@ nav a {
     color: var(--color-tinta-titulo);
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     display: inline-block;
     background-color: var(--color-tinta-titulo);
     color: var(--color-fondo-titulo);
     width: 100%;
 }
-/*
-article, section {
-    padding-top: var(--alto-menu);
-}
 
-nav > ul > li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-
-nav li ul {
-    display: none;
-    position: absolute;
-}
-
-nav li:hover ul {
-    display: block;
-}
-
-nav a:hover {
-    background-color: var(--color-tinta-titulo);
-    color: var(--color-fondo-titulo);
-}
-*/
 /* Principal */
 
 main {
@@ -145,4 +123,45 @@ footer {
     padding: var(--margen-pequeno);
     background-color: var(--color-fondo-titulo);
     color: var(--color-tinta-titulo);
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        position: sticky;
+        top: 0;
+        text-align: left;
+    }
+
+    article,
+    section {
+        padding-top: var(--alto-menu);
+    }
+
+    nav>ul>li {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    nav li ul {
+        display: none;
+        position: absolute;
+        background-color: var(--color-fondo-titulo);
+    }
+
+    nav li:hover ul {
+        display: block;
+    }
+
+    nav a:hover {
+        background-color: var(--color-tinta-titulo);
+        color: var(--color-fondo-titulo);
+    }
+
+    nav>ul>li>a {
+        display: inherit;
+        background-color: var(--color-fondo-titulo);
+        color: var(--color-tinta-titulo);
+        width: auto;
+    }
 }
