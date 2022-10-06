@@ -12,3 +12,9 @@ En español:
 
 * Uniwebsidad: https://uniwebsidad.com/libros
 * Aprender desarrollo web con MDN: https://developer.mozilla.org/es/docs/Learn
+
+Juegos para aprender CSS:
+
+* CSS Dinner: https://flukeout.github.io/
+* FlexBox Froggy: https://flexboxfroggy.com/#es
+* Grid Garden: https://cssgridgarden.com/#es
