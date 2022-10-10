@@ -87,6 +87,11 @@ nav {
     background-color: var(--color-fondo-titulo);
 }
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
 nav ul li {
     line-height: var(--alto-menu);
 }
@@ -127,10 +132,16 @@ footer {
 
 @media (min-width: 768px) {
 
+    /* Menú */
+
     nav {
         position: sticky;
         top: 0;
         text-align: left;
+    }
+
+    nav>ul {
+        flex-direction: row;
     }
 
     article,
@@ -150,7 +161,7 @@ footer {
     }
 
     nav li:hover ul {
-        display: block;
+        display: flex;
     }
 
     nav a:hover {
@@ -163,5 +174,99 @@ footer {
         background-color: var(--color-fondo-titulo);
         color: var(--color-tinta-titulo);
         width: auto;
+    }
+
+    nav>ul>li:last-of-type {
+        margin-left: auto;
+    }
+
+    /* Imágenes */
+
+    img {
+        max-width: 50%;
+        height: auto;
+        width: auto;
+
+        /* float: right; */
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    article {
+        padding: var(--margen-pequeno);
+        width: 50%;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 959px) {
+    article {
+        width: 33.3333%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        grid-area: cabecera;
+    }
+
+    body>nav {
+        grid-area: menu;
+    }
+
+    main {
+        grid-area: principal;
+    }
+
+    aside {
+        grid-area: anuncios;
+    }
+
+    footer {
+        grid-area: pie;
+    }
+
+    body {
+        display: grid;
+
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "cabecera cabecera"
+            "menu menu"
+            "principal anuncios"
+            "pie pie";
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        grid-template-columns: 1fr 6fr 1fr;
+
+        grid-template-areas:
+            "cabecera cabecera cabecera"
+            "menu principal anuncios"
+            "pie pie pie";
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav>ul>li>ul {
+        margin-left: 5rem;
+        margin-top: calc(-1 * var(--alto-menu));
+    }
+
+    nav>ul>li:last-of-type {
+        margin-left: inherit;
     }
 }

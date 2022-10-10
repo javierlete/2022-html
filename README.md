@@ -7,6 +7,8 @@ En inglés:
 
 * Certificaciones de todo tipo: https://freecodecamp.org
 * Tutoriales sencillos: https://www.w3schools.com
+* Chuleta de FlexBox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Chuleta de Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 
 En español:
 
