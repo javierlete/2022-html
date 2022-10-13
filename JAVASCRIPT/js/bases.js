@@ -20,13 +20,13 @@ function bucles() {
         x++;
     } while (x <= 5);
 
-    for(let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
         console.log(i);
     }
 
-    const arr = [ 10, 2, 30, 4, 5, 6, 6 ];
+    const arr = [10, 2, 30, 4, 5, 6, 6];
 
-    for(let dato of arr) {
+    for (let dato of arr) {
         console.log(dato);
     }
 }
