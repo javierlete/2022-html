@@ -20,3 +20,7 @@ Juegos para aprender CSS:
 * CSS Dinner: https://flukeout.github.io/
 * FlexBox Froggy: https://flexboxfroggy.com/#es
 * Grid Garden: https://cssgridgarden.com/#es
+
+Juegos para aprender JavaScript:
+
+* JSRobot: https://lab.reaal.me/jsrobot/
