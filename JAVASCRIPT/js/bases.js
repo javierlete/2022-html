@@ -1,9 +1,8 @@
 'use strict';
 
-bucles();
-
-//condicionales();
-//objetos();
+// bucles();
+// condicionales();
+// objetos();
 // arrays();
 // tiposBasicos();
 
@@ -25,9 +24,14 @@ function bucles() {
     }
 
     const arr = [10, 2, 30, 4, 5, 6, 6];
+    arr.prueba = 'test';
 
     for (let dato of arr) {
         console.log(dato);
+    }
+
+    for (let clave in arr) {
+        console.log(clave, arr[clave]);
     }
 }
 
