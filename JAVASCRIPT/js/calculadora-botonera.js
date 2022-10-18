@@ -1,10 +1,12 @@
 'use strict';
 
-let operacionGlobal, op1, op2, total;
+let operacionGlobal, op1 = 0, op2 = 0, total = 0;
 
 window.addEventListener('DOMContentLoaded', function() {
     const resultado = document.getElementById('resultado');
     const numeros = document.getElementsByClassName('numeros');
+
+    console.log(numeros);
 
     // Por cada numero que haya en numeros
     for(let numero of numeros) {
